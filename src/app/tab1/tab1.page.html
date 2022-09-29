@@ -1,17 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> CALCULADORA </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-item>
+    <ion-label>VALOR 1</ion-label>
+    <ion-input type="number"></ion-input>
+    <ion-label>VALOR 2</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button>+</ion-button>
+    <ion-button>-</ion-button>
+    <ion-button>*</ion-button>
+    <ion-button>/</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-button>MAIOR</ion-button>
+    <ion-button>MENOR</ion-button>
+  </ion-item>
+  <ion-label>{{ result }}</ion-label>
 </ion-content>
