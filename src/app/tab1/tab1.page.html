@@ -1,10 +1,14 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="warning" mode="md">
-    <ion-title> CALCULADORA <small>( SIMPLES )</small> </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-header [translucent]="true"></ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">This is the menu content.</ion-content>
+  </ion-menu>
   <ion-grid id="values-grid">
     <ion-row>
       <ion-item>
@@ -24,14 +28,14 @@
     </ion-row>
   </ion-grid>
   <ion-item id="buttons">
-    <ion-button (click)="sum()"><ion-icon name="add"></ion-icon></ion-button>
-    <ion-button (click)="sub()"><ion-icon name="remove"></ion-icon></ion-button>
-    <ion-button (click)="mult()"><ion-icon name="close"></ion-icon></ion-button>
-    <ion-button (click)="divi()">/</ion-button>
+    <ion-button expand="block" shape="round" (click)="sum()"><ion-icon name="add"></ion-icon></ion-button>
+    <ion-button expand="block" shape="round" (click)="sub()"><ion-icon name="remove"></ion-icon></ion-button>
+    <ion-button expand="block" shape="round" (click)="mult()"><ion-icon name="close"></ion-icon></ion-button>
+    <ion-button expand="block" shape="round" (click)="divi()">/</ion-button>
   </ion-item>
   <ion-item id="sum-minus">
-    <ion-button (click)="mt()">MAIOR</ion-button>
-    <ion-button (click)="lt()">MENOR</ion-button>
+    <ion-button expand="block" shape="round" (click)="mt()">MAIOR</ion-button>
+    <ion-button expand="block" shape="round" (click)="lt()">MENOR</ion-button>
   </ion-item>
   <ion-item id="result">
     <ion-label>RESULTADO:</ion-label>
