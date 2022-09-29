@@ -24,3 +24,32 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+ion-toolbar {
+  ion-title {
+    font-weight: 700;
+  }
+}
+
+ion-button {
+  --background: rgb(73, 73, 73);
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-auto-rows-1 {
+	grid-template-rows: 1fr 1fr;
+	grid-auto-rows: 100px;
+}
+
+small {
+  color: rgb(94, 47, 9);
+}

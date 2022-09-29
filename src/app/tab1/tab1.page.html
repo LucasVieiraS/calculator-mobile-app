@@ -1,25 +1,42 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> CALCULADORA </ion-title>
+  <ion-toolbar color="warning" mode="md">
+    <ion-title> CALCULADORA <small>( SIMPLES )</small> </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item>
-    <ion-label>VALOR 1</ion-label>
-    <ion-input type="number"></ion-input>
-    <ion-label>VALOR 2</ion-label>
-    <ion-input type="number"></ion-input>
+  <ion-grid id="values-grid">
+    <ion-row>
+      <ion-item>
+        <ion-label>VALOR 1</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-input type="number" placeholder="123" [(ngModel)]='value1'></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-label>VALOR 2</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-input type="number" placeholder="123" [(ngModel)]='value2'></ion-input>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+  <ion-item id="buttons">
+    <ion-button (click)="sum()"><ion-icon name="add"></ion-icon></ion-button>
+    <ion-button (click)="sub()"><ion-icon name="remove"></ion-icon></ion-button>
+    <ion-button (click)="mult()"><ion-icon name="close"></ion-icon></ion-button>
+    <ion-button (click)="divi()">/</ion-button>
+  </ion-item>
+  <ion-item id="sum-minus">
+    <ion-button (click)="mt()">MAIOR</ion-button>
+    <ion-button (click)="lt()">MENOR</ion-button>
+  </ion-item>
+  <ion-item id="result">
+    <ion-label>RESULTADO:</ion-label>
   </ion-item>
   <ion-item>
-    <ion-button>+</ion-button>
-    <ion-button>-</ion-button>
-    <ion-button>*</ion-button>
-    <ion-button>/</ion-button>
+    <ion-label>{{ result }}</ion-label>
   </ion-item>
-  <ion-item>
-    <ion-button>MAIOR</ion-button>
-    <ion-button>MENOR</ion-button>
-  </ion-item>
-  <ion-label>{{ result }}</ion-label>
 </ion-content>
