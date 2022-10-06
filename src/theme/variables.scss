@@ -118,6 +118,34 @@
    */
 
   body {
+    --ion-color-dark-gray: #34383e;
+    --ion-color-dark-gray-rgb: 52,56,62;
+    --ion-color-dark-gray-contrast: #ffffff;
+    --ion-color-dark-gray-contrast-rgb: 255,255,255;
+    --ion-color-dark-gray-shade: #2e3137;
+    --ion-color-dark-gray-tint: #484c51;
+
+    --ion-color-button-dark-bg: #141414;
+    --ion-color-button-dark-bg-rgb: 52, 56, 62;
+    --ion-color-button-dark-bg-contrast: #ffffff;
+    --ion-color-button-dark-bg-contrast-rgb: 255,255,255;
+    --ion-color-button-dark-bg-shade: #121212;
+    --ion-color-button-dark-bg-tint: #2c2c2c;
+
+    --ion-color-button-bg: #070707;
+    --ion-color-button-bg-rgb: 7,7,7;
+    --ion-color-button-bg-contrast: #ffffff;
+    --ion-color-button-bg-contrast-rgb: 255,255,255;
+    --ion-color-button-bg-shade: #060606;
+    --ion-color-button-bg-tint: #202020;
+
+    --ion-color-calc-bg: #232323;
+    --ion-color-calc-bg-rgb: 35,35,35;
+    --ion-color-calc-bg-contrast: #ffffff;
+    --ion-color-calc-bg-contrast-rgb: 255,255,255;
+    --ion-color-calc-bg-shade: #1f1f1f;
+    --ion-color-calc-bg-tint: #393939;
+
     --ion-color-primary: #ff7b00;
     --ion-color-primary-rgb: 255,123,0;
     --ion-color-primary-contrast: #000000;

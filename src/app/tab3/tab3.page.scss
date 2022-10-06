@@ -20,6 +20,12 @@ ion-row:nth-child(1) {
   }
 }
 
+ion-input {
+  text-align: right;
+  font-size: 2rem;
+  margin: auto;
+}
+
 ion-row:nth-child(n+2) {
 
   display: grid;

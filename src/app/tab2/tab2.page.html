@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="calc-bg">
     <ion-buttons slot="start">
-      <ion-icon class="invert-icon" slot="icon-only" name="code-slash"></ion-icon>
+      <ion-icon class="invert-icon" color="dark" slot="icon-only" name="code-slash"></ion-icon>
     </ion-buttons>
     <ion-title>Padrão</ion-title>
     <ion-buttons slot="end">
@@ -15,10 +15,10 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row id="result-window">
-      <ion-item color="dark-step-650">
+      <div id="result-div">
         <ion-input id="calc-screen" [(ngModel)]="input" autofocus clearOnEdit="false" type="text" placeholder="123"></ion-input>
         <ion-note>{{ result }}</ion-note>
-      </ion-item>
+      </div>
     </ion-row>
     <ion-row class="buttons">
       <ion-button color="button-dark-bg" (click)="verifyDigit($event)" id="%" expand="block">

@@ -11,6 +11,18 @@ ion-grid {
   height: 100%;
 }
 
+ion-input {
+  font-size: 2rem;
+  margin: auto;
+}
+
+#result-div {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+}
+
 #calc-screen {
   text-align: right;
 }
@@ -43,7 +55,7 @@ ion-row:nth-child(n+2) {
     --color: white;
     --box-shadow: 0;
     --border-style: solid;
-    --border-width: 2px;
+    --border-width: 1px;
     --border-color: rgb(32, 32, 32)
   }
 

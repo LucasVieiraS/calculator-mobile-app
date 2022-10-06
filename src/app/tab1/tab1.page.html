@@ -1,7 +1,7 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="calc-bg">
     <ion-buttons slot="start">
-      <ion-icon class="invert-icon" slot="icon-only" name="calculator"></ion-icon>
+      <ion-icon class="invert-icon" color="dark" slot="icon-only" name="calculator"></ion-icon>
     </ion-buttons>
     <ion-title>Simples</ion-title>
     <ion-buttons slot="end">
@@ -25,23 +25,23 @@
 
   <!--OPERATOR BUTTONS-->
   <div lines="inset" id="buttons">
-    <ion-button expand="block" mode="ios" (click)="sum()">
+    <ion-button color="button-dark-bg" expand="block" mode="ios" (click)="sum()">
       <ion-icon [src]="sumIcon"></ion-icon>
     </ion-button>
-    <ion-button expand="block" mode="ios" (click)="sub()">
+    <ion-button color="button-dark-bg" expand="block" mode="ios" (click)="sub()">
       <ion-icon [src]="subtractionIcon"></ion-icon>
     </ion-button>
-    <ion-button expand="block" mode="ios" (click)="mult()">
+    <ion-button color="button-dark-bg" expand="block" mode="ios" (click)="mult()">
       <ion-icon [src]="multiplyIcon"></ion-icon>
     </ion-button>
-    <ion-button expand="block" mode="ios" (click)="divi()">
+    <ion-button color="button-dark-bg" expand="block" mode="ios" (click)="divi()">
       <ion-icon [src]="divideIcon"></ion-icon>
     </ion-button>
   </div>
 
   <div lines="inset" id="sum-minus">
-    <ion-button expand="block" mode="ios" class="font-weight-600" (click)="mt()">MAIOR</ion-button>
-    <ion-button expand="block" mode="ios" class="font-weight-600" (click)="lt()">MENOR</ion-button>
+    <ion-button color="button-dark-bg" expand="block" mode="ios" class="font-weight-600" (click)="mt()">MAIOR</ion-button>
+    <ion-button color="button-dark-bg" expand="block" mode="ios" class="font-weight-600" (click)="lt()">MENOR</ion-button>
   </div>
 
   <!--RESULTS-->
