@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+/* eslint-disable quote-props */
 import { Component } from '@angular/core';
 
 @Component({
@@ -13,7 +15,29 @@ export class Tab2Page {
   divideIcon = '../../assets/icon/Divide.svg';
 
   result: number | string = '';
+  input: string = '';
+
 
   constructor() {}
+
+  // UTIL
+  isNum(id: string) {
+    return !isNaN(parseFloat(id));
+  }
+
+  // CALCULATIONS
+  doCalculation(input) {
+
+  }
+
+  // BOILER
+  verifyDigit(event) {
+    const id = event.target.id;
+    if (this.isNum(id)) {
+      this.input += id;
+    } else {
+
+    }
+  }
 
 }
