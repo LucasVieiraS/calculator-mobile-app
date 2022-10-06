@@ -13,6 +13,11 @@ export class Tab1Page {
   value1;
   value2;
 
+  sumIcon = '../../assets/icon/Sum.svg';
+  subtractionIcon = '../../assets/icon/Subtraction.svg';
+  multiplyIcon = '../../assets/icon/Multiply.svg';
+  divideIcon = '../../assets/icon/Divide.svg';
+
   constructor(private toastController: ToastController) {}
 
   async notify(_message: string) {
@@ -26,11 +31,13 @@ export class Tab1Page {
 
   canOperate() {
     if (this.value1 == null || this.value2 == null) {
-      this.notify((this.value1 == null && 'Value 1 is null') ||
-      ( this.value2 == null && 'Value 2 is null') ||
-      (this.value1 == null && this.value2 == null) && 'Both are null');
+      this.notify(
+        ( this.value1 == null && 'Valor 1 não pode ser nulo.' )
+        ||
+        ( this.value2 == null && 'Valor 2 não pode ser nulo.' )
+      );
     }
-    return this.value1 != null || this.value2 != null;
+    return this.value1 != null && this.value2 != null;
   }
 
   // OPERATORS
@@ -57,11 +64,13 @@ export class Tab1Page {
   // MORE/LESS THAN
   mt() {
     if (!this.canOperate()) { return; }
-    this.result = this.value1 > this.value2 && 'Verdade' || 'Falso';
+    this.result = this.value1 === this.value2 && `${this.value1} = ${this.value2}`
+    || (this.value1 > this.value2 && `${this.value1} > ${this.value2}` || `${this.value1} < ${this.value2}`) ;
   }
 
   lt() {
     if (!this.canOperate()) { return; }
-    this.result = this.value1 < this.value2 && 'Verdade' || 'Falso';
+    this.result = this.value1 === this.value2 && `${this.value1} = ${this.value2}`
+    || (this.value1 > this.value2 && `${this.value1} > ${this.value2}` || `${this.value1} < ${this.value2}`) ;
   }
 }

@@ -29,27 +29,36 @@
 
 * {
   font-family: 'Inter', sans-serif;
+  --ion-font-family: 'Inter', sans-serif;
 }
 
-ion-toolbar {
-  ion-title {
-    font-weight: 700;
+@each $weight in (
+  300,
+  400,
+  500,
+  600,
+  700,
+) {
+  .font-weight-#{$weight} {
+      font-weight: $weight;
   }
 }
 
-ion-button {
-  --background: rgb(73, 73, 73);
+ion-title {
+  @extend .font-weight-500;
+  color: white;
+  padding-left: 0;
+  margin-left: 0.5rem;
 }
 
-.grid {
-	display: grid;
+ion-item {
+  --highlight-color: #ff7b00;
 }
 
-.grid-auto-rows-1 {
-	grid-template-rows: 1fr 1fr;
-	grid-auto-rows: 100px;
+.invert-icon {
+  filter: invert(1);
 }
 
-small {
-  color: rgb(94, 47, 9);
+ion-buttons {
+  margin-left: 0.75rem;
 }

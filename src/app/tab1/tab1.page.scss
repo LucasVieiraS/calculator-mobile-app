@@ -1,58 +1,31 @@
-$square-ratio: 20vw;
-
-ion-item {
-  width: 100%;
-  margin: auto;
-}
-
-#values-grid {
-  ion-row {
-    width: 100%;
-  }
-}
-
-#values-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  ion-label {
-    width: 100%;
-  }
-  ion-input {
-    width: 100%;
-  }
-}
-
-ion-label {
-  font-weight: 700;
-  width: 100vw;
-}
-ion-input {
-  width: 100vw;
+ion-button {
+  color: white;
 }
 
 #buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
-  ion-button {
-    width: 1rem;
-    height: 1rem;
-    max-width: $square-ratio;
-    min-width: $square-ratio;
-    max-height: $square-ratio;
-    min-height: $square-ratio;
+
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+
+  * {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    width: 25%;
   }
 }
 
 #sum-minus {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  ion-button {
+
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+
+  * {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
     width: 50%;
-    height: 3rem;
   }
 }

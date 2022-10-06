@@ -1,11 +1,108 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-icon name="sync"></ion-icon>
+      <ion-icon class="invert-icon" slot="icon-only" name="code-slash"></ion-icon>
+    </ion-buttons>
+    <ion-title>Padrão</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+  <ion-grid>
+    <ion-row id="result-window">
+      <ion-item class="value-input" color="dark-step-650">
+        <ion-input type="text" placeholder="123"></ion-input>
+        <ion-note>{{ result }}</ion-note>
+      </ion-item>
+    </ion-row>
+    <ion-row class="buttons">
+      <ion-button class="dark" expand="block">
+        <ion-label>%</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>CE</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>C</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label><ion-icon name="backspace" style="scale: 1.25"></ion-icon></ion-label>
+      </ion-button>
+    </ion-row>
+    <ion-row class="buttons">
+      <ion-button class="dark" expand="block">
+        <ion-label><i>x<sup>2</sup></i></ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label><i><sup>1</sup>/<sub>x</sub></i></ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>|<i>x</i>|</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label><ion-icon [src]="divideIcon"></ion-icon></ion-label>
+      </ion-button>
+    </ion-row>
+    <ion-row class="buttons">
+      <ion-button class="dark" expand="block">
+        <ion-label>7</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>8</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>9</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>X</ion-label>
+      </ion-button>
+    </ion-row>
+    <ion-row class="buttons">
+      <ion-button class="dark" expand="block">
+        <ion-label>4</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>5</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>6</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>-</ion-label>
+      </ion-button>
+    </ion-row>
+    <ion-row class="buttons">
+      <ion-button class="dark" expand="block">
+        <ion-label>1</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>2</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>3</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>+</ion-label>
+      </ion-button>
+    </ion-row>
+    <ion-row class="buttons">
+      <ion-button class="dark" expand="block">
+        <ion-label><sup>+</sup>/<sub>-</sub></ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>0</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>,</ion-label>
+      </ion-button>
+      <ion-button class="dark" expand="block">
+        <ion-label>=</ion-label>
+      </ion-button>
+    </ion-row>
+  </ion-grid>
 </ion-content>

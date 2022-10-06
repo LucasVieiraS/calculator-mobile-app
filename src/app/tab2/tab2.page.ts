@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  sumIcon = '../../assets/icon/Sum.svg';
+  subtractionIcon = '../../assets/icon/Subtraction.svg';
+  multiplyIcon = '../../assets/icon/Multiply.svg';
+  divideIcon = '../../assets/icon/Divide.svg';
+
+  result: number | string = '';
+
   constructor() {}
 
 }

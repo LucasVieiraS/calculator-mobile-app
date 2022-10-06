@@ -1,5 +1,14 @@
 ion-tab-button {
   --color: white;
-  --color-selected: orange;
-  height: 70%;
+  transition: 0.3s ease-out;
+
+  scale: 0.9;
+
+  ion-icon {
+    transition: 0.1s ease-out;
+  }
+  ion-label {
+    margin-top: .2rem;
+    font-weight: 500;
+  }
 }
